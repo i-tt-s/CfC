@@ -1,0 +1,23 @@
+.red {
+    color: #ff0000;
+}
+#headline {
+    font-size: 40px;
+}
+
+div {
+    width: 50%;
+}
+
+p {
+    width:50%;
+    font-size: 50px;
+}
+
+p.red{
+    color: #9e8c14;
+}
+
+div p {
+    font-size: 20px;
+}
