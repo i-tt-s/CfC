@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The New Yorker</title>
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/new_yorker.css">
+</head>
+<body>
+
+<!-- მენიუს გაცენტვრა -->
+<nav class="navbar navbar-expand-lg sticky-top navbar-light white-bg justify-content-between">
+    <span class="navbar-text">
+    <a href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssXu2GvbQpg-7o5N5MdNue0ZdcL9f-1nzY6wGdny1ybB-Gfa0gZWSneSEYd8mat4uWRRN9SOW99GEkG4-vJg7_5qcnMNZG9UxlBpVfsxI6FNTz6nzd6ek-0jljLD90g2iMkSM2gJ_IgW6min1902oRYcOMm5fwr9wbtYAYVqPnqeUOU399sbNyyphEFiUB1qyKE3Sa1ojJx1o95Xs13qmw4GAUHERSh35i1fEUYkjJ8P1Q4lfYE6TRLA4Zj97eP5lzcaA&sai=AMfl-YQi5FSRlWe2x19U5aaPsO_5PDfqKOUffLUH3-x6NKnssXl1SOtTXWpYOkWMI9grR4FSxMgefni4fRMxRooRSkyZt3IdY6UerahNHd7TWpCBpPlVtDuIs16_QrIESpxg82DE3yxTNARb08q29K8B&sig=Cg0ArKJSzIb4LgBQmHG4EAE&urlfix=1&adurl=https://subscribe.newyorker.com/subscribe/newyorker/129018%3Fsource%3DAMS_NYR_GLOBAL_COLLAPSED_NAVBAR_0_LEGACY_AIQLOWPROP_TEST_ZZ_PANELA%26pos_name%3DAMS_NYR_GLOBAL_COLLAPSED_NAVBAR"
+       class="text-reset">
+       Subscribe for $4 a month.
+    </a>
+  </span>
+
+    <a class="navbar-brand" href="#"><img src="https://logos-download.com/wp-content/uploads/2016/11/The_New_Yorker_logo.png" height="50 px" class="center-img"></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ღილაკის გარეშე როგორ იქნება pop-up --!>
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="https://assets.bounceexchange.com/assets/uploads/clients/1990/creatives/ef73d321f93300774a813c5507293732.jpg"
+                     width="50%">
+                <p>Discover Daily Newsletter</p>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign me</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="container">
+    <hr>
+    <div class="row">
+        <div class="media">
+            <img src="https://media.newyorker.com/photos/5e6a8b2a5a2694000896ab06/1:1/w_68,c_limit/virus-hpicon.jpg"
+                 class="align-self-end mr-3" alt="Virus Icon">
+            <div class="media-body">
+                <br>
+                <div class="center-text">
+                    <em>The New Yorker</em>
+                    &nbsp;has made its&nbsp;
+                    <a href="https://www.newyorker.com/tag/coronavirus">coronavirus news coverage</a>
+                    &nbsp;and analysis free for all readers.
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="row">
+                <img src="https://media.newyorker.com/photos/5eebe95c6cf18b2e1e0612ae/4:3/w_300,c_limit/200629_r36675.jpg"
+                     width="100%">
+                <p class="red-headline">
+                    <a href="https://www.newyorker.com/magazine/letter-from-israel" class="text-reset">LETTER FROM
+                        ISRAEL</a>
+                </p>
+                <h3><a href="https://www.newyorker.com/magazine/2020/06/29/in-search-of-king-davids-lost-empire"
+                       class="text-reset">In
+                    Search of King David’s Lost Empire</a></h3>
+                <p>By <a href="https://www.newyorker.com/contributors/ruth-margalit" class="text-reset">Ruth
+                    Margalit</a></p>
+            </div>
+            <hr>
+            <div class="row">
+                <img src="https://media.newyorker.com/photos/5edfcf99bc6b5da8be57718c/4:3/w_300,c_limit/Snyder-DomesticViolence-ed.jpg"
+                     width="100%">
+                <p class="red-headline">
+                    <a href="https://www.newyorker.com/news/news-desk" class="text-reset">NEWS DESK</a>
+                </p>
+                <h3>
+                    <a href="https://www.newyorker.com/news/news-desk/can-domestic-abusers-keep-themselves-accountable-when-no-one-is-watching"
+                       class="text-reset">Can
+                        Domestic Abusers Keep Themselves Accountable?</a></h3>
+                <p>By <a href="https://www.newyorker.com/contributors/rachel-louise-snyder" class="text-reset">Rachel
+                    Louise Snyder</a></p>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="https://media.newyorker.com/photos/5ee15523d1828684f5049b84/4:3/w_680,c_limit/Tolentino-BailFunds.jpg"
+                 width="100%">
+            <p class="red-headline">
+                <a href="https://www.newyorker.com/news/news-desk" class="text-reset">NEWS DESK</a>
+            </p>
+            <h2>
+                <a href="https://www.newyorker.com/news/news-desk/can-domestic-abusers-keep-themselves-accountable-when-no-one-is-watching"
+                   class="text-reset">Can
+                    Domestic Abusers Keep Themselves Accountable?</a></h2>
+            <p>Bail funds have been deluged with donations since the recent wave of protests began. But organizers hope
+                these funds won’t have to exist in their current form for much longer.</p>
+
+            <p>By <a href="https://www.newyorker.com/contributors/rachel-louise-snyder" class="text-reset">Rachel
+                Louise Snyder</a></p>
+        </div>
+        <div class="col-3 verticalLine">
+            <p><em>News & Culture</em></p>
+            <hr>
+            <ul class="list-unstyled">
+                <li class="media my-4">
+                    <img src="https://media.newyorker.com/photos/5eeba2b3a6d149991df031f0/2:2/w_84,c_limit/200629_r36671.jpg"
+                         class="mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1"><a
+                                href="https://www.newyorker.com/magazine/2020/06/29/the-promise-and-the-peril-of-virtual-health-care"
+                                class="text-reset">The
+                            Promise and the Peril of Virtual Health Care</a></h5>
+                        By <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">John
+                        Seabrook</a>
+                    </div>
+                </li>
+                <hr>
+                <li class="media my-4">
+                    <img src="https://media.newyorker.com/photos/5ef1337ce4c2fbaa9b04d4c7/2:2/w_84,c_limit/Cassidy-HWBush92.jpg"
+                         class="mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1"><a
+                                href="https://www.newyorker.com/news/our-columnists/what-trump-has-in-common-with-the-last-president-to-lose-reelection"
+                                class="text-reset">The
+                            What Trump Has in Common with the Last President to Lose Reëlection</a></h5>
+                        By <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">John
+                        Seabrook</a>
+                    </div>
+                </li>
+                <hr>
+                <li class="media">
+                    <img src="https://media.newyorker.com/photos/5ef245226cf18b2e1e0617f9/2:2/w_84,c_limit/Brody-AMCTheatreReopening.jpg"
+                         class="mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1"><a
+                                href="https://www.newyorker.com/culture/the-front-row/do-movies-still-need-multiplexes"
+                                class="text-reset">The
+                            Do Movies Still Need Multiplexes?</a></h5>
+                        By <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">John
+                        Seabrook</a>
+                    </div>
+                </li>
+                <hr>
+                <li class="media">
+                    <img src="https://media.newyorker.com/photos/5ef24bb52385d52b037beb98/2:2/w_84,c_limit/Raising_Baby_Grey.gif    "
+                         class="mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1"><a
+                                href="https://www.newyorker.com/culture/the-front-row/do-movies-still-need-multiplexes"
+                                class="text-reset">The
+                            “Raising Baby Grey” Explores the World of Gender-Neutral Parenting</a></h5>
+                        By <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">John
+                        Seabrook</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <hr>
+    <div class="row">
+        <div class="media">
+            <img src="https://media.newyorker.com/photos/59096d7d6552fa0be682ff8f/1:1/w_68,c_limit/eustace-400.png"
+                 class="align-self-end mr-3" alt="Virus Icon">
+            <div class="media-body">
+                <br>
+                <div class="center-text">
+                    Support
+                    <em>The New Yorker's</em>
+                    &nbsp;award-winning journalism.&nbsp;
+                    <a href="https://www.newyorker.com/tag/coronavirus">Subscribe today >></a>
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="row">
+        <div class="col-10">
+            <div class="row">
+                <hr>
+                <!--მარცხნივაა გადმოსატანი -->
+                <p class="p-left"><em>Spotlight</em></p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <ul class="list-unstyled">
+                        <li class="media my-4">
+                            <img src="https://media.newyorker.com/photos/5eeba2b3a6d149991df031f0/2:2/w_84,c_limit/200629_r36671.jpg"
+                                 class="mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><a
+                                        href="https://www.newyorker.com/magazine/2020/06/29/the-promise-and-the-peril-of-virtual-health-care"
+                                        class="text-reset">The
+                                    Promise and the Peril of Virtual Health Care</a></h5>
+                                By <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">John
+                                Seabrook</a>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="media my-4">
+                            <img src="https://media.newyorker.com/photos/5ef1337ce4c2fbaa9b04d4c7/2:2/w_84,c_limit/Cassidy-HWBush92.jpg"
+                                 class="mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><a
+                                        href="https://www.newyorker.com/news/our-columnists/what-trump-has-in-common-with-the-last-president-to-lose-reelection"
+                                        class="text-reset">The
+                                    What Trump Has in Common with the Last President to Lose Reëlection</a></h5>
+                                By <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">John
+                                Seabrook</a>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="media">
+                            <img src="https://media.newyorker.com/photos/5ef245226cf18b2e1e0617f9/2:2/w_84,c_limit/Brody-AMCTheatreReopening.jpg"
+                                 class="mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><a
+                                        href="https://www.newyorker.com/culture/the-front-row/do-movies-still-need-multiplexes"
+                                        class="text-reset">The
+                                    Do Movies Still Need Multiplexes?</a></h5>
+                                By <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">John
+                                Seabrook</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-5 verticalLine">
+                    <ul class="list-unstyled">
+                        <li class="media my-4">
+                            <img src="https://media.newyorker.com/photos/5eeba2b3a6d149991df031f0/2:2/w_84,c_limit/200629_r36671.jpg"
+                                 class="mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><a
+                                        href="https://www.newyorker.com/magazine/2020/06/29/the-promise-and-the-peril-of-virtual-health-care"
+                                        class="text-reset">The
+                                    Promise and the Peril of Virtual Health Care</a></h5>
+                                By <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">John
+                                Seabrook</a>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="media my-4">
+                            <img src="https://media.newyorker.com/photos/5ef1337ce4c2fbaa9b04d4c7/2:2/w_84,c_limit/Cassidy-HWBush92.jpg"
+                                 class="mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><a
+                                        href="https://www.newyorker.com/news/our-columnists/what-trump-has-in-common-with-the-last-president-to-lose-reelection"
+                                        class="text-reset">The
+                                    What Trump Has in Common with the Last President to Lose Reëlection</a></h5>
+                                By <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">John
+                                Seabrook</a>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="media">
+                            <img src="https://media.newyorker.com/photos/5ef245226cf18b2e1e0617f9/2:2/w_84,c_limit/Brody-AMCTheatreReopening.jpg"
+                                 class="mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1"><a
+                                        href="https://www.newyorker.com/culture/the-front-row/do-movies-still-need-multiplexes"
+                                        class="text-reset">The
+                                    Do Movies Still Need Multiplexes?</a></h5>
+                                By <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">John
+                                Seabrook</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2 verticalLine">
+                    <img src="https://tpc.googlesyndication.com/simgad/4796567652298856087?">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<br>
+
+<div class="container">
+    <hr>
+    <div class="row">
+        <div class="media">
+            <img src="https://media.newyorker.com/photos/5d405edf21a62700083b195d/1:1/w_68,c_limit/newsletter-hp-banner.jpg"
+                 class="align-self-end mr-3" alt="Virus Icon">
+            <div class="media-body">
+                <br>
+                <div class="center-text">
+                    The best of
+                    <em>The New Yorker</em>
+                    &nbsp;in your in-box.&nbsp;
+                    <a href="https://www.newyorker.com/tag/coronavirus">Sign up for our newsletters now.</a>
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <h2 class="div-headline">The Latest</h2>
+    <hr>
+<br>
+    <ul class="list-unstyled">
+        <li class="media">
+            <img src="https://media.newyorker.com/photos/5ef24d25b975762d612e07ae/4:3/w_280,c_limit/auping-penguins.jpg"
+                 class="mr-3" alt="...">
+            <div class="media-body">
+                <!--UpperCaseს არ აკეთებს-->
+                <p class="red-headline" class="text-uppercase"><a href="https://www.newyorker.com/humor/daily-shouts"
+                                                                  class="text-reset">Daily
+                    Shouts</a></p>
+                <h3 class="mt-0 mb-1"><a
+                        href="https://www.newyorker.com/humor/daily-shouts/more-activities-that-penguins-have-been-permitted-during-lockdown"
+                        class="text-reset">More
+                    Activities That Penguins Have Been Permitted During Lockdown</a></h3>
+                Going to yoga, talking about the new Bob Dylan album, taking a picture of other penguins not
+                social-distancing, and more.
+                <p>By <a href="https://www.newyorker.com/contributors/jonny-auping" class="text-reset">Jonny Auping</a>
+                    &nbsp; 7:00 A.M.</p>
+            </div>
+        </li>
+        <br>
+        <li class="media">
+            <img src="https://media.newyorker.com/photos/5edd2f4412ab80aceea1c9c8/4:3/w_280,c_limit/PoetryPodcast-ClarenceMajor.jpg"
+                 class="mr-3" alt="...">
+            <div class="media-body">
+                <p class="red-headline"><a href="https://www.newyorker.com/humor/daily-shouts" class="text-reset"
+                                           class="text-uppercase">Poetry Podcast</a></p>
+                <h3 class="mt-0 mb-1"><a
+                        href="https://www.newyorker.com/humor/daily-shouts/more-activities-that-penguins-have-been-permitted-during-lockdown"
+                        class="text-reset">More
+                    Clarence Major Reads Billy Collins.</a></h3>
+                Clarence Major joins Kevin Young to discuss “Downpour,” by Billy Collins, and his own poem “Hair.”
+                <p> 6:00 P.M.</p>
+            </div>
+        </li>
+        <br>
+        <li class="media">
+            <img src="https://media.newyorker.com/photos/5ef26bba2385d52b037bebac/4:3/w_280,c_limit/Borowitz-TrumpHatesRamps.jpg"
+                 class="mr-3" alt="...">
+            <div class="media-body">
+                <p class="red-headline" class="text-uppercase"><a href="https://www.newyorker.com/humor/daily-shouts"
+                                                                  class="text-reset">DAILY
+                    SHOUTS</a></p>
+                <h3 class="mt-0 mb-1"><a
+                        href="https://www.newyorker.com/humor/daily-shouts/more-activities-that-penguins-have-been-permitted-during-lockdown"
+                        class="text-reset">More
+                    Activities That Penguins Have Been Permitted During Lockdown</a></h3>
+                Going to yoga, talking about the new Bob Dylan album, taking a picture of other penguins not
+                social-distancing, and more.
+                <p>By <a href="https://www.newyorker.com/contributors/jonny-auping" class="text-reset">Jonny Auping</a>
+                    &nbsp; 7:00 A.M.</p>
+            </div>
+        </li>
+        <br>
+        <li class="media">
+            <img src="https://media.newyorker.com/photos/5ef1095025aad12acaa82c90/4:3/w_280,c_limit/Counteroffer%252010%25202560.jpg"
+                 class="mr-3" alt="...">
+            <div class="media-body">
+                <p class="red-headline"><a href="https://www.newyorker.com/humor/daily-shouts" class="text-reset"
+                                           class="text-uppercase">DAILY
+                    SHOUTS</a></p>
+                <h3 class="mt-0 mb-1"><a
+                        href="https://www.newyorker.com/humor/daily-shouts/more-activities-that-penguins-have-been-permitted-during-lockdown"
+                        class="text-reset">More
+                    Activities That Penguins Have Been Permitted During Lockdown</a></h3>
+                Going to yoga, talking about the new Bob Dylan album, taking a picture of other penguins not
+                social-distancing, and more.
+                <p>By <a href="https://www.newyorker.com/contributors/jonny-auping" class="text-reset">Jonny Auping</a>
+                    &nbsp; 7:00 A.M.</p>
+            </div>
+        </li>
+        <br>
+        <li class="media">
+            <img src="https://media.newyorker.com/photos/5ef222a5227f74e3e1b072d2/4:3/w_280,c_limit/Borowitz-Tulsa.jpg"
+                 class="mr-3" alt="...">
+            <div class="media-body">
+                <p class="red-headline"><a href="https://www.newyorker.com/humor/daily-shouts" class="text-reset"
+                                           class="text-uppercase">DAILY
+                    SHOUTS</a></p>
+                <h3 class="mt-0 mb-1"><a
+                        href="https://www.newyorker.com/humor/daily-shouts/more-activities-that-penguins-have-been-permitted-during-lockdown"
+                        class="text-reset">More
+                    Clarence Major Reads Billy Collins.</a></h3>
+                Clarence Major joins Kevin Young to discuss “Downpour,” by Billy Collins, and his own poem “Hair.”
+                <p>By <a href="https://www.newyorker.com/contributors/jonny-auping" class="text-reset">Jonny Auping</a>
+                    &nbsp; 7:00 A.M.</p>
+            </div>
+        </li>
+    </ul>
+
+    <br>
+
+    <div class="row">
+        <div class="col-4" id="centered-button">
+            <button type="button" class="btn btn-outline-primary btn-block">More Stories</button>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h4><em>New Yorker</em> Favourites </h4>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-3">
+            <div id="img-centered">
+                <img src="https://media.newyorker.com/photos/5d07f2344f818b6c574448c0/4:3/w_140,c_limit/icon-3-goat.jpg">
+            </div>
+            <br>
+            <p class="p-centered"><a href="https://www.newyorker.com/goings-on-about-town" class="text-reset">Goings On
+                About Town</a></p>
+        </div>
+
+        <div class="col-3">
+            <div id="img-centered">
+                <img src="https://media.newyorker.com/photos/5d07f21ba2f3480e76bfe1f7/4:3/w_140,c_limit/icon-2-crosswords.jpg">
+            </div>
+            <br>
+            <p class="p-centered"><a href="https://www.newyorker.com/goings-on-about-town"
+                                     class="text-reset">Crossword</a></p>
+        </div>
+        <div class="col-3">
+            <div id="img-centered">
+                <img src="https://media.newyorker.com/photos/5d07f25aa2f3489312bfe1f9/4:3/w_140,c_limit/icon-5-caption.jpg">
+            </div>
+            <br>
+            <p class="p-centered"><a href="https://www.newyorker.com/goings-on-about-town" class="text-reset">Caption
+                Contest</a></p>
+        </div>
+        <div class="col-3">
+            <div id="img-centered">
+                <img src="https://media.newyorker.com/photos/5d07f1984f818b85724448b8/4:3/w_140,c_limit/icon-1-recommends.jpg">
+                <br>
+            </div>
+            <p class="p-centered"><a href="https://www.newyorker.com/goings-on-about-town" class="text-reset">New Yorker
+                Recommends</a></p>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<div class="conatiner">
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+
+            </div>
+        </div>
+
+        <div class="col-6">
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+
+        </div>
+        <div class="col-3">
+
+        </div>
+    </div>
+</div>
+
+<br>
+<!-- რატომ ვერ ვცენტრავ დივს -->
+<div class="container">
+    <div class="row">
+        <div class="col-10 centered-div">
+            <img src="https://tpc.googlesyndication.com/simgad/13896694274820094105?" width="100%">
+        </div>
+    </div>
+
+
+</div>
+<br>
+
+<div class="container">
+    <hr>
+    <div class="row">
+        <hr>
+        <div class="col-6">
+            <h2 class="h2-centered">Contributors</h2>
+            <hr>
+
+            <ul class="list-unstyled">
+
+                <li class="media my-4">
+                    <img src="https://media.newyorker.com/photos/59097b6c1c7a8e33fb3901ee/1:1/w_130,c_limit/fan-jiayang.png"
+                         class="mr-3" alt="Fan's avatar" id="round-img">
+                    <div class="media-body">
+                        <a href="https://www.newyorker.com/contributors/jiayang-fan" class="text-reset">Jiayang Fan</a>
+                        <h5 class="mt-0 mb-1"><a
+                                href="https://www.newyorker.com/magazine/2020/06/29/the-promise-and-the-peril-of-virtual-health-care"
+                                class="text-reset">Telling the Stories of the Protests Here and in Hong Kong
+                        </a></h5>
+                        <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">All work</a>
+                    </div>
+                </li>
+
+                <hr>
+
+                <li class="media my-4">
+                    <img src="https://media.newyorker.com/photos/59097b6d8b51cf59fc423c51/1:1/w_130,c_limit/als-hilton.png"
+                         class="mr-3" alt="Fan's avatar" id="round-img">
+                    <div class="media-body">
+                        <a href="https://www.newyorker.com/contributors/jiayang-fan" class="text-reset">
+                            Hilton Als</a>
+                        <h5 class="mt-0 mb-1"><a
+                                href="https://www.newyorker.com/magazine/2020/06/29/the-promise-and-the-peril-of-virtual-health-care"
+                                class="text-reset">My Mother’s Dreams for Her Son, and All Black Children
+                        </a></h5>
+                        <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">All work</a>
+                    </div>
+                </li>
+
+                <hr>
+
+                <li class="media my-4">
+                    <img src="https://media.newyorker.com/photos/59097b761c7a8e33fb390202/1:1/w_130,c_limit/kormann-carolyn.png"
+                         class="mr-3" alt="Fan's avatar" id="round-img">
+                    <div class="media-body">
+                        <a href="https://www.newyorker.com/contributors/jiayang-fan" class="text-reset">Carolyn
+                            Kormann</a>
+                        <h5 class="mt-0 mb-1"><a
+                                href="https://www.newyorker.com/magazine/2020/06/29/the-promise-and-the-peril-of-virtual-health-care"
+                                class="text-reset">Corina Newsome and the Black Birders Movement
+                        </a></h5>
+                        <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">All work</a>
+                    </div>
+                </li>
+
+                <hr>
+
+                <li class="media my-4">
+                    <img src="https://media.newyorker.com/photos/5a8dcdf5b224117c02f4fefd/1:1/w_130,c_limit/eric_lach.png"
+                         class="mr-3" alt="Fan's avatar" id="round-img">
+                    <div class="media-body">
+                        <a href="https://www.newyorker.com/contributors/jiayang-fan" class="text-reset">Eric Lach</a>
+                        <h5 class="mt-0 mb-1"><a
+                                href="https://www.newyorker.com/magazine/2020/06/29/the-promise-and-the-peril-of-virtual-health-care"
+                                class="text-reset">Donald Trump’s Empty Campaign Rally in Tulsa
+                        </a></h5>
+                        <a href="https://www.newyorker.com/contributors/john-seabrook" class="text-reset">All work</a>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="row">
+                <div class="col" id="centered-button">
+                    <button type="button" class="btn btn-outline-primary btn-block">More Contributors</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 verticalLine">
+            <h2 class="h2-centered">Most Popular</h2>
+            <hr>
+            <ol>
+                <li>
+                    <h6 class="text-danger text-uppercase">the political stance</h6>
+                    <h5>
+                        <a href="https://www.newyorker.com/magazine/2020/06/29/what-fiona-hill-learned-in-the-white-house#intcid=recommendations_the-new-yorker-homepage_004e1b7c-37ba-4d46-934e-c2c4914e4707_popular4-1"
+                           class="text-reset">
+                            What Fiona Hill Learned in the White House
+                        </a>
+                    </h5>
+                    By <a href="What Fiona Hill Learned in the White House" class="text-reset">Adam Entous</a>
+                </li>
+
+                <br>
+
+                <li>
+                    <h6 class="text-danger text-uppercase">Our Columnists</h6>
+                    <h5>
+                        <a href="https://www.newyorker.com/magazine/2020/06/29/what-fiona-hill-learned-in-the-white-house#intcid=recommendations_the-new-yorker-homepage_004e1b7c-37ba-4d46-934e-c2c4914e4707_popular4-1"
+                           class="text-reset">
+                            What Trump Has in Common with the Last President to Lose Reëlection
+                        </a>
+                    </h5>
+                    By <a href="What Fiona Hill Learned in the White House" class="text-reset">John Cassidy</a>
+                </li>
+
+                <br>
+
+                <li>
+                    <h6 class="text-danger text-uppercase">Election 2020</h6>
+                    <h5>
+                        <a href="https://www.newyorker.com/magazine/2020/06/29/what-fiona-hill-learned-in-the-white-house#intcid=recommendations_the-new-yorker-homepage_004e1b7c-37ba-4d46-934e-c2c4914e4707_popular4-1"
+                           class="text-reset">
+                            Kentucky Primary Live Election
+                            <Results></Results>
+                        </a>
+                    </h5>
+                    By <a href="What Fiona Hill Learned in the White House" class="text-reset">Adam Entous</a>
+                </li>
+
+                <br>
+
+                <li>
+                    <h6 class="text-danger text-uppercase">The New Yorker Documentary</h6>
+                    <h5>
+                        <a href="https://www.newyorker.com/magazine/2020/06/29/what-fiona-hill-learned-in-the-white-house#intcid=recommendations_the-new-yorker-homepage_004e1b7c-37ba-4d46-934e-c2c4914e4707_popular4-1"
+                           class="text-reset">
+                            “Raising Baby Grey” Explores the World of Gender-Neutral Parenting
+                        </a>
+                    </h5>
+                    By <a href="What Fiona Hill Learned in the White House" class="text-reset">Crispin Long</a>
+                </li>
+
+                <br>
+
+                <li>
+                    <h6 class="text-danger text-uppercase">The New Yorker Documentary</h6>
+                    <h5>
+                        <a href="https://www.newyorker.com/magazine/2020/06/29/what-fiona-hill-learned-in-the-white-house#intcid=recommendations_the-new-yorker-homepage_004e1b7c-37ba-4d46-934e-c2c4914e4707_popular4-1"
+                           class="text-reset">
+                            “Three-Step Crisis Management for the High-End Karen
+                        </a>
+                    </h5>
+                    By <a href="What Fiona Hill Learned in the White House" class="text-reset">Rich Benjaming</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+    <br>
+    <hr>
+</div>
+<br>
+
+<div class="container">
+
+    <div class="card-group">
+        <div class="card">
+            <img class="card-img-top" src="https://media.newyorker.com/photos/5eebec3635257179ff2c285d/master/w_280,c_limit/2020_06_29.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title h5-centered">June 29, 2020 Issue</h5>
+                <button type="button" class="btn btn-outline-info btn-block">Table of Contents</button>
+            </div>
+        </div>
+        &nbsp;
+        <div class="card">
+            <img class="card-img-top" src="https://media.newyorker.com/photos/5ee2bcfbf3e036cfcf82b258/master/w_280,c_limit/2020_06_22.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title h5-centered">June 22, 2020 Issue</h5>
+                <button type="button" class="btn btn-outline-info btn-block">Table of Contents</button>
+            </div>
+        </div>
+        &nbsp;
+        <div class="card">
+            <img class="card-img-top" src="https://media.newyorker.com/photos/5ed17036d80080a01f980a38/master/w_280,c_limit/2020_06_08.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title h5-centered">June 8, 2020 Issue</h5>
+                <button type="button" class="btn btn-outline-info btn-block">Table of Contents</button>
+            </div>
+        </div>
+        &nbsp;
+        <div class="card">
+            <img class="card-img-top" src="https://media.newyorker.com/photos/5ec8188522299c5524f4b571/master/w_280,c_limit/2020_06_01.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title h5-centered">July 11, 2020 Issue</h5>
+                <button type="button" class="btn btn-outline-info btn-block">Table of Contents</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<br>
+
+<!-- გასასწორებელი color + align-->
+<footer class="footer">
+    <div class="footer-div">
+        <ol class="ol-list">
+            <li class="inline">
+                <a href="https://www.newyorker.com/podcast/the-new-yorker-radio-hour">Listen to the New Yorker Radio Hour</a>
+            </li>
+            <li class="inline">
+                <a href="https://www.newyorker.com/podcast/the-new-yorker-radio-hour">Buy the Cover</a>
+            </li>
+            <li class="inline">
+                <a href="https://www.newyorker.com/podcast/the-new-yorker-radio-hour">Play the Crossword</a>
+            </li>
+            <li class="inline">
+                <a href="https://www.newyorker.com/podcast/the-new-yorker-radio-hour">Play the Jigsaw Puzzle</a>
+            </li>
+        </ol>
+    </div>
+</footer>
+
+</body>
+</html>

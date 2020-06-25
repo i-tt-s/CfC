@@ -1,0 +1,103 @@
+hr {
+    border-color: lightgray;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.media-body{
+    line-height: 68 px;
+}
+
+.media {
+    margin: auto;
+}
+
+.red-headline {
+    color: red;
+    margin: 10px 0px 10px;
+}
+
+.div-headline {
+text-align:center;
+}
+
+#centered-button {
+    margin:auto;
+}
+
+h4 {
+    text-align:center;
+}
+
+.h5-centered {
+    text-align: center;
+}
+
+.p-centered {
+    text-align:center;
+}
+
+#img-centered {
+    margin:auto;
+    width:50%;
+}
+
+.p-left {
+    text-align: left;
+}
+
+.centered-div: {
+    margin:auto;
+}
+
+.h2-centered {
+    text-align: center;
+}
+
+#round-img {
+    border-radius: 50%;
+}
+
+.verticalLine {
+    border-left: thin solid lightgray;
+}
+
+.center-img {
+    margin:auto;
+}
+
+.inline-list {
+    display: block;
+}
+
+.white-bg {
+    background-color: white;
+    box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.25);
+}
+
+.float-right {
+    float:right;
+}
+
+.ol-list {
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.inline {
+    float: left;
+}
+
+.inline a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.footer {
+    color: black;
+}
